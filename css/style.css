@@ -7,47 +7,4 @@ body {
     font-family: 'Poppins', sans-serif; 
 } 
 
-/* Layout for the header and navbar */
-.header {
-  width: 100%;
-  background-color: white; /* or any color you prefer */
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional */
-}
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Logo styling */
-.logo-heading {
-  margin: 0;
-}
-
-/* Hide the hamburger on larger screens */
-.hamburger {
-  display: none;
-}
-
-/* Horizontal menu list */
-.menu-list {
-  list-style: none;
-  display: flex;
-  gap: 20px; /* spacing between links */
-  margin: 0;
-  padding: 0;
-}
-
-/* Menu items */
-.menu-list-items .links {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-/* Optional: hover effect */
-.menu-list-items .links:hover {
-  color: #007bff;
-}
