@@ -3,33 +3,58 @@ body {
     color: #3721e3;
     background-color: rgb(178, 229, 241);
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/** HEADER **/
+/** Header/Navbar Styling **/
 #header-nav {
     background-color: rgb(178, 229, 241);
-    border-radius: 0;
-    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Add a light blue background color to the top navigation */
+/* Topnav Container */
 .topnav {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+  align-items: center;  
   background-color: rgb(178, 229, 241);
-  overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/* Navbar Links */
 .topnav a {
-  float: left;
   color: #3721e3;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  text-align: center;
+  padding: 14px 16px;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-/* Change the color of links on hover */
+/* Hover underline animation */
+.topnav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #3721e3;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  color: #000;
+}
+
+.topnav a:hover::after {
+    width: 100%;
 }
