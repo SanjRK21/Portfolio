@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
-    color: rgb(178, 229, 241);
-    background-color: #3721e3;
+    color: #3721e3;
+    background-color: rgb(178, 229, 241);
     font-family: "Montserrat", sans-serif;
 }
 
@@ -12,16 +12,16 @@ body {
     border: 0;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a light blue background color to the top navigation */
 #topnav {
-  background-color: #3721e3;
+  background-color: rgb(178, 229, 241);
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 #topnav a {
   float: left;
-  color: rgb(178, 229, 241);
+  color: #3721e3;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
