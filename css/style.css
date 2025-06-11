@@ -105,6 +105,25 @@ body {
     margin-bottom: 2rem;
 }
 
+/* Fancy Button */
+.btn {
+  background-color: #3721e3;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #2613b0;
+  transform: scale(1.05);
+}
+
 /* Fade-in animation */
 @keyframes fadeIn {
   from {
