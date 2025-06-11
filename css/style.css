@@ -10,25 +10,38 @@ body {
 /** Header/Navbar Styling **/
 #header-nav {
     background-color: rgb(178, 229, 241);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 0.5rem 1rem;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0.5rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Topnav Container */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .topnav {
   display: flex;
   gap: 1.5rem;
   justify-content: flex-end;
   align-items: center;  
-  background-color: rgb(178, 229, 241);
+  background-color: transparent;
 }
 
-/* Navbar Links */
+.site-title a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3721e3;
+  text-decoration: none;
+}
+
 .topnav a {
   color: #3721e3;
   text-decoration: none;
@@ -39,7 +52,6 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Hover underline animation */
 .topnav a::after {
     content: '';
     position: absolute;
@@ -59,7 +71,6 @@ body {
     width: 100%;
 }
 
-/* Responsive (optional) */
 @media screen and (max-width: 768px) {
   .topnav {
     flex-direction: column;
