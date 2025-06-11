@@ -106,21 +106,27 @@ body {
 }
 
 /* Fancy Button */
+.hero-btn {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .btn {
   background-color: #3721e3;
-  color: white;
-  border: none;
-  padding: 12px 28px;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 50px;
   font-size: 1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
-  display: inline-block;
+  box-shadow: 0 4px 10px rgba(55, 33, 227, 0.2);
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #2613b0;
+  background-color: #2815b5;
   transform: scale(1.05);
 }
 
