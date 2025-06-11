@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
-    color: #3721e3;
-    background-color: rgb(178, 229, 241);
+    color: #333333;
+    background-color: #F4F6FC;
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 
 /** Header/Navbar Styling **/
 #header-nav {
-    background-color: rgb(178, 229, 241);
+    background-color: #F9F9FF;
     border-radius: 0;
     box-shadow: none;
     margin: 0;
@@ -38,12 +38,12 @@ body {
 .site-title a {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #3721e3;
+  color: #6C63FF;
   text-decoration: none;
 }
 
 .topnav a {
-  color: #3721e3;
+  color: #6C63FF;
   text-decoration: none;
   font-size: 17px;
   text-align: center;
@@ -57,14 +57,14 @@ body {
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #3721e3;
+    background-color: #FF6B81;
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
 }
 
 .topnav a:hover {
-  color: #000;
+  color: #FF6B81;
 }
 
 .topnav a:hover::after {
@@ -126,7 +126,7 @@ body {
 }
 
 .btn {
-  background-color: #3721e3;
+  background-color: #6C63FF;
   color: #fff;
   padding: 12px 24px;
   border-radius: 50px;
@@ -137,7 +137,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #2815b5;
+  background-color: #4B47CC;
   transform: scale(1.05);
 }
 
@@ -262,7 +262,7 @@ body {
 }
 
 .skills-list li {
-    background: #3721e3;
+    background: #6C63FF;
     color: #fff;
     padding: 10px 20px;
     border-radius: 25px;
@@ -271,12 +271,12 @@ body {
 }
 
 .skills-list li:hover {
-    background: #2613b0;
+    background: #4B47CC;
 }
 
 /* Contact */
 .contact {
-    background: #f0f4ff;
+    background: #F9F9FF;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -313,7 +313,7 @@ body {
 }
 
 .social-icons a {
-    color: #3721e3;
+    color: #6C63FF;
     font-size: 1.5rem;
     margin: 0 10px;
     transition: transform 0.3s, color 0.3s;
@@ -321,7 +321,7 @@ body {
 
 .social-icons a:hover {
     transform: scale(1.2);
-    color: #000;
+    color: #FF6B81;
 }
 
 /* Footer */
