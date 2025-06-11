@@ -58,3 +58,38 @@ body {
 .topnav a:hover::after {
     width: 100%;
 }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #b2e5f1, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-text h3 {
+    font-size: 1.5rem;
+    color: #3721e3;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #000;
+    margin: 0.5rem 0;
+}
+
+.hero-text h4 {
+    font-size: 1.25rem;
+    color:#555;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
