@@ -92,32 +92,31 @@ body {
   transform: scale(1.05);
 }
 
-.overlay {
+.hover-info {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
-  padding: 1.5rem;
-  background-color: rgba(55, 33, 227, 0.9);
-  color: white;
-  text-align: center;
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 0.25s ease-out;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 1.2rem;
+  text-align: center;
   border-radius: 12px;
+  max-width: 90%;
+  transition: transform 0.3s ease;
   pointer-events: none;
 }
 
-.image-container:hover .overlay {
+.image-container:hover .hover-info {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.overlay h3 {
+.hover-info h3 {
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  font-size: 1.25rem;
 }
 
-.overlay p {
-  font-size: 0.95rem;
-  margin: 0;
+.hover-info p {
+  font-size: 0.9rem;
   line-height: 1.4;
 }
