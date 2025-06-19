@@ -26,10 +26,10 @@ body {
 /* Gallery Grid */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 3rem 2rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* was 250px */
+  gap: 3rem; /* was 2rem */
+  padding: 4rem 2rem; /* more breathing room */
+  max-width: 1300px; /* was 1200px */
   margin: 0 auto;
 }
 
@@ -42,7 +42,8 @@ body {
 }
 
 .gallery-item img:hover {
-  transform: scale(1.04);
+  transform: scale(1.06);
+  box-shadow: 0 12px 24px rgba(247, 166, 194, 0.3);
 }
 
 /* Image Container */
@@ -54,21 +55,11 @@ body {
 
 /* Modern Hover Card */
 .hover-card {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  background: #ffffffee;
-  color: #111;
-  padding: 1rem 1.25rem;
-  border-radius: 16px;
-  max-width: 260px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
-  transform: scale(0);
-  transform-origin: bottom left;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0;
-  z-index: 5;
+  background: #fff9fc; /* cuter background */
+  border: 2px dashed #f7a6c2; /* pastel border */
+  border-radius: 20px;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  box-shadow: 0 10px 24px rgba(255, 182, 193, 0.2); /* pink glow */
 }
 
 .image-container:hover .hover-card {
