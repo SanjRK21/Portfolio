@@ -42,28 +42,39 @@ body {
 }
 
 .gallery-item img:hover {
-  transform: scale(1.06);
+  transform: scale(1.05) rotateY(3deg);
   box-shadow: 0 12px 24px rgba(247, 166, 194, 0.3);
 }
 
 /* Image Container */
 .image-container {
   position: relative;
-  display: inline-block;
+  perspective: 1200px;
   margin: 2rem 0;
 }
 
 /* Modern Hover Card */
 .hover-card {
-  background: #fff9fc; /* cuter background */
-  border: 2px dashed #f7a6c2; /* pastel border */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9) translateZ(-100px);
+  opacity: 0;
+  background: #fff9fc;
+  border: 2px dashed #f7a6c2;
   border-radius: 20px;
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  box-shadow: 0 10px 24px rgba(255, 182, 193, 0.2); /* pink glow */
+  box-shadow: 0 10px 24px rgba(255, 182, 193, 0.2);
+  padding: 1.25rem;
+  text-align: center;
+  max-width: 260px;
+  z-index: 5;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform-origin: center;
 }
 
 .image-container:hover .hover-card {
-  transform: scale(1);
+  transform: translate(-50%, -50%) scale(1) translateZ(60px);
   opacity: 1;
 }
 
