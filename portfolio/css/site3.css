@@ -89,34 +89,48 @@ body {
 }
 
 .image-container:hover img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
-.hover-info {
+.speech-bubble {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  background: rgba(0, 0, 0, 0.75);
-  color: #fff;
-  padding: 1.2rem;
-  text-align: center;
-  border-radius: 12px;
+  bottom: 10px;
+  left: 10px;
+  background: #fff;
+  color: #333;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   max-width: 90%;
-  transition: transform 0.3s ease;
-  pointer-events: none;
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease;
+  z-index: 1;
 }
 
-.image-container:hover .hover-info {
-  transform: translate(-50%, -50%) scale(1);
+/* Triangle "tail" */
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #fff;
 }
 
-.hover-info h3 {
+.image-container:hover .speech-bubble {
+  transform: scale(1);
+}
+
+.speech-bubble h3 {
+  margin: 0 0 0.5rem;
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
 }
 
-.hover-info p {
+.speech-bubble p {
   font-size: 0.9rem;
+  margin: 0;
   line-height: 1.4;
 }
