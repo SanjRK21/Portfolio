@@ -1,102 +1,71 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #fff8f9;
-  color: #222;
+  background-color: #fdfdfd;
+  color: #111;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #f7d6e0, #b2e5f1);
+  background: linear-gradient(135deg, #ff8a8a, #8a8aff);
   text-align: center;
   padding: 4rem 2rem;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  color: #3721e3;
-  margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+  color: #111;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #444;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Section Titles */
+.category-title {
+  text-align: left;
+  font-size: 2rem;
+  margin: 3rem 0 1rem 2rem;
+  color: #111;
+  border-left: 6px solid #3721e3;
+  padding-left: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Gallery Grid */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* was 250px */
-  gap: 3rem; /* was 2rem */
-  padding: 4rem 2rem; /* more breathing room */
-  max-width: 1300px; /* was 1200px */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 2.5rem; 
+  padding: 2rem; 
+  max-width: 1400px; 
   margin: 0 auto;
 }
 
 /* Image Styling */
 .gallery-item img {
   width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .gallery-item img:hover {
-  transform: scale(1.05) rotateY(3deg);
-  box-shadow: 0 12px 24px rgba(247, 166, 194, 0.3);
-}
-
-/* Image Container */
-.image-container {
-  position: relative;
-  perspective: 1200px;
-  margin: 2rem 0;
+  transform: scale(1.06) rotateY(1deg);
+  box-shadow: 0 14px 28px rgba(55, 33, 227, 0.3);
 }
 
 /* Modern Hover Card */
 .hover-card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9) translateZ(-100px);
-  opacity: 0;
-  background: #fff9fc;
-  border: 2px dashed #f7a6c2;
-  border-radius: 20px;
-  font-family: 'Poppins', 'Montserrat', sans-serif;
-  box-shadow: 0 10px 24px rgba(255, 182, 193, 0.2);
-  padding: 1.25rem;
-  text-align: center;
-  max-width: 260px;
-  z-index: 5;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  transform-origin: center;
-}
-
-.image-container:hover .hover-card {
-  transform: translate(-50%, -50%) scale(1) translateZ(60px);
-  opacity: 1;
-}
-
-.hover-card h3 {
-  font-size: 1.1rem;
-  margin: 0 0 0.5rem;
-  color: #3721e3;
-}
-
-.hover-card p {
-  font-size: 0.9rem;
-  margin: 0;
-  color: #444;
-  line-height: 1.5;
-}
-
-/* Caption below image */
-.gallery-item p {
-  margin-top: 0.75rem;
-  font-weight: 500;
-  color: #333;
-  text-align: center;
+  background: #fff;
+  border: 2px solid #3721e3;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Contact Section */
