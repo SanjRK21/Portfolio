@@ -1,99 +1,33 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #cae9ff;
-  color: #1b4965;
+  background-color: #fff0f3;
+  color: #1c1c2e;
 }
 
-/* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #bee9e8, #62b6cb);
+  background: linear-gradient(135deg, #ffb3c6, #cdb4db);
   text-align: center;
   padding: 4rem 2rem;
 }
 
 .hero h1 {
   font-size: 3.5rem;
-  color: #1b4965;
+  color: #3a0ca3;
   font-weight: 900;
-  text-transform: uppercase;
-}
-
-.hero p {
-  font-size: 1.3rem;
-  color: #5fa8d3;
-  font-weight: 500;
-}
-
-/* Section Titles */
-.category-title {
-  text-align: left;
-  font-size: 2rem;
-  margin: 3rem 0 1rem 2rem;
-  color: #1b4965;
-  border-left: 6px solid #5fa8d3;
-  padding-left: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Gallery Grid */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-  gap: 2.5rem; 
-  padding: 2rem; 
-  max-width: 1400px; 
-  margin: 0 auto;
-}
-
-/* Image Styling */
-.gallery-item img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .gallery-item img:hover {
-  transform: scale(1.06) rotateY(1deg);
-  box-shadow: 0 14px 28px rgba(27, 73, 101, 0.3);
-}
-
-/* Modern Hover Card */
-.hover-card {
-  background: #cae9ff;
-  border: 2px solid #5fa8d3;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  color: #1b4965;
-}
-
-/* Contact Section */
-.contact {
-  background-color: #bee9e8;
-  text-align: center;
-  padding: 3rem 2rem;
-}
-
-.contact h2 {
-  color: #1b4965;
-  margin-bottom: 1rem;
+  transform: scale(1.06);
+  box-shadow: 0 14px 28px rgba(58, 12, 163, 0.3);
 }
 
 .contact-btn {
-  display: inline-block;
-  background-color: #62b6cb;
+  background-color: #3a0ca3;
   color: #fff;
-  padding: 12px 24px;
-  border-radius: 25px;
-  text-decoration: none;
-  margin-top: 1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .contact-btn:hover {
-  background-color: #5fa8d3;
-  transform: scale(1.05);
+  background-color: #ffb3c6;
+  color: #1c1c2e;
 }
-
