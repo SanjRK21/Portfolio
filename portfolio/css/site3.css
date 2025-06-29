@@ -1,27 +1,27 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #fdfdfd;
-  color: #111;
+  background-color: #cae9ff;
+  color: #1b4965;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #ff8a8a, #8a8aff);
+  background: linear-gradient(135deg, #bee9e8, #62b6cb);
   text-align: center;
   padding: 4rem 2rem;
 }
 
 .hero h1 {
   font-size: 3.5rem;
-  color: #111;
+  color: #1b4965;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .hero p {
   font-size: 1.3rem;
-  color: #333;
+  color: #5fa8d3;
   font-weight: 500;
 }
 
@@ -30,8 +30,8 @@ body {
   text-align: left;
   font-size: 2rem;
   margin: 3rem 0 1rem 2rem;
-  color: #111;
-  border-left: 6px solid #3721e3;
+  color: #1b4965;
+  border-left: 6px solid #5fa8d3;
   padding-left: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -57,32 +57,33 @@ body {
 
 .gallery-item img:hover {
   transform: scale(1.06) rotateY(1deg);
-  box-shadow: 0 14px 28px rgba(55, 33, 227, 0.3);
+  box-shadow: 0 14px 28px rgba(27, 73, 101, 0.3);
 }
 
 /* Modern Hover Card */
 .hover-card {
-  background: #fff;
-  border: 2px solid #3721e3;
+  background: #cae9ff;
+  border: 2px solid #5fa8d3;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  color: #1b4965;
 }
 
 /* Contact Section */
 .contact {
-  background-color: #f0f4ff;
+  background-color: #bee9e8;
   text-align: center;
   padding: 3rem 2rem;
 }
 
 .contact h2 {
-  color: #3721e3;
+  color: #1b4965;
   margin-bottom: 1rem;
 }
 
 .contact-btn {
   display: inline-block;
-  background-color: #3721e3;
+  background-color: #62b6cb;
   color: #fff;
   padding: 12px 24px;
   border-radius: 25px;
@@ -92,7 +93,7 @@ body {
 }
 
 .contact-btn:hover {
-  background-color: #2815b5;
+  background-color: #5fa8d3;
   transform: scale(1.05);
 }
 
