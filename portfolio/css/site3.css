@@ -116,11 +116,26 @@ body {
 
 /* Hover Card */
 .hover-card {
-  background: var(--ice-blue);
-  border: 2px solid var(--mid-blue);
+  background: white;
+  border: 2px solid #62b6cb;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  color: var(--navy);
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  color: #1b4965;
+  transition: transform 0.3s ease;
+}
+
+.hover-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1b4965;
+}
+
+.hover-card p {
+  font-size: 0.95rem;
+  color: #2b3a55;
+  line-height: 1.6;
 }
 
 /* Contact Section */
