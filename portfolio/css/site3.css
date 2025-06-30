@@ -115,7 +115,7 @@ body {
 }
 
 /* Hover Card */
-.hover-card {
+/*.hover-card {
   background: white;
   border: 2px solid #62b6cb;
   border-radius: 12px;
@@ -124,10 +124,10 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   color: #1b4965;
   transition: transform 0.3s ease;
-}
+}*/
 
 .hover-card h3 {
-  font-size: 1.1rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
   color: #1b4965;
 }
