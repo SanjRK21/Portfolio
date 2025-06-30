@@ -2,8 +2,9 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--ice-blue);
-  color: var(--navy);
+  background-color: #cae9ff;
+  color: #1b4965;
+  scroll-behavior: smooth;
 }
 
 /* Hero Section */
@@ -12,33 +13,38 @@ body {
   padding: 6rem 2rem;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
   animation: fadeInUp 1s ease-out;
+  box-shadow: inset 0 -5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .hero h1 {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: #1b4965;
   margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .hero p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #2b3a55;
   margin-bottom: 2rem;
 }
 
 .hero-btn {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-btn .btn {
   padding: 12px 28px;
   background-color: #1b4965;
-  color: #fff;
+  color: white;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
@@ -46,9 +52,9 @@ body {
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.hero-btn:hover {
+.hero-btn .btn:hover {
   background-color: #5fa8d3;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 @keyframes fadeInUp {
