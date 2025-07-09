@@ -308,11 +308,29 @@ body {
   color: #333;
 }
 
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.skills-icons i,
+.skills-icons img {
+  font-size: 2rem;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+.skills-icons i:hover,
+.skills-icons img:hover {
+  transform: scale(1.2);
+}
+
 .tool-icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 8px;
+  width: 32px;
+  height: 32px;
 }
 
 .skills-list li:hover {
