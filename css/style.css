@@ -299,12 +299,20 @@ body {
 }
 
 .skills-list li {
-    background: #6C63FF;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1rem;
-    transition: background 0.3s;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.skills-list i {
+  margin-right: 8px;
+  color: #333;
+}
+
+.tool-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 .skills-list li:hover {
