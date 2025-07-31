@@ -33,6 +33,8 @@ body {
   justify-content: flex-end;
   align-items: center;  
   background-color: transparent;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
 }
 
 .site-title a {
@@ -90,6 +92,7 @@ body {
     align-items: center;
     padding: 2rem;
     text-align: center;
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
 .hero-content {
@@ -167,7 +170,7 @@ body {
     justify-content: center;
     gap: 3rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .about-image img {
@@ -230,7 +233,7 @@ body {
 .portfolio .my-heading {
     font-size: 2.5rem;
     color: #3721e3;
-    margin-bottom: 2rem;
+    margin-top: 30px;
 }
 
 .project {
@@ -247,6 +250,7 @@ body {
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 30px;
 }
 
 .portfolio-card:hover {
