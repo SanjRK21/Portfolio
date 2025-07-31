@@ -90,7 +90,7 @@ body {
     align-items: center;
     padding: 2rem;
     text-align: center;
-    margin-top: 80px; /* Add a top margin to avoid content overlay */
+    margin-top: 90px; /* Add a top margin to avoid content overlay */
 }
 
 .hero-content {
